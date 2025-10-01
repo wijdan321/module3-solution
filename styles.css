@@ -1,0 +1,27 @@
+/* تمييز القسم الطويل */
+.section-long {
+  background-color: #f2f2f2;
+  min-height: 1000px; /* يجعل الصفحة طويلة جداً */
+  padding: 20px;
+}
+
+/* عندما تفتح قائمة الموبايل، نجعلها ممتدة بعرض الصفحة وذات خلفية مميزة */
+@media (max-width: 767px) {
+  .navbar-collapse.in {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px; /* يضع القائمة تحت شريط التنقل */
+    background: #ececec;
+    z-index: 9999;
+  }
+  .navbar-nav>li>a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* تحسين شكل الشعار */
+.navbar-brand {
+  font-weight: bold;
+}

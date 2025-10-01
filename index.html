@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>قائمتنا</title>
+
+  <!-- Bootstrap 3 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- شريط التنقل (يتحرك مع الصفحة - ليس ثابت) -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- زر الهاتف (مرئي فقط على xs) -->
+      <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+        <span class="sr-only">قائمة</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- اسم الشركة على اليسار -->
+      <a class="navbar-brand pull-left" href="#">Food, LLC</a>
+    </div>
+
+    <!-- قائمة الموبايل (تظهر فقط على xs) -->
+    <div class="collapse navbar-collapse" id="mobile-menu">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a href="#chicken">دجاج</a></li>
+        <li><a href="#beef">لحم بقري</a></li>
+        <li><a href="#sushi">سوشي</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- عنوان الصفحة (موجود في منتصف النافذة باستخدام bootstrap class) -->
+<div class="container text-center">
+  <h1 class="page-title">قائمتنا</h1>
+</div>
+
+<!-- قسم طويل جداً لفرض التمرير -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 section-long" id="main-section">
+      <p>هذا قسم طويل جدًا — الغاية إجبار الشاشة على التمرير لأسفل. ضعي هنا محتوى أو احتفظي بارتفاع كبير.</p>
+
+      <!-- أجزاء إضافية مرتبطة بروابط القائمة (اختياري لكن مفيد للتجربة) -->
+      <div id="chicken" style="margin-top:80px;">
+        <h3 class="text-center">دجاج</h3>
+        <p>محتوى قسم الدجاج...</p>
+      </div>
+
+      <div id="beef" style="margin-top:40px;">
+        <h3 class="text-center">لحم بقري</h3>
+        <p>محتوى قسم اللحم...</p>
+      </div>
+
+      <div id="sushi" style="margin-top:40px;">
+        <h3 class="text-center">سوشي</h3>
+        <p>محتوى قسم السوشي...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- سكريبتات jQuery و Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
